@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+.animated-text {
+  animation: fadeInDown 2s;
+  font-size: 2.5rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.cta-button {
+  padding: 10px 20px;
+  background: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+nav {
+  background-color: #0056b3;
+  padding: 10px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main.content {
+  padding: 20px;
+}
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.member {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+}
+.passport {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
