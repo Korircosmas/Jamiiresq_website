@@ -1,35 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JamiiResQ Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamiiResQ Solutions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f2f7fb; color: #333; }
+        header { background-color: #0074cc; color: white; padding: 20px 40px; text-align: center; }
+        nav { background-color: #005fa3; padding: 10px 40px; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .hero { text-align: center; padding: 60px 20px; background: url('solution_background.png') no-repeat center center/cover; color: white; }
+        .hero h1 { font-size: 3em; margin-bottom: 20px; animation: fadeInDown 1.5s ease-in-out; }
+        .hero p { font-size: 1.2em; margin-bottom: 25px; }
+        .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .section h2 { color: #005fa3; }
+        .footer { background-color: #003f66; color: white; padding: 20px 40px; text-align: center; }
+        .btn { background-color: #ff5722; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-size: 1rem; }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay">
-      <h1 class="animated-text">Welcome to JamiiResQ Solutions</h1>
-      <p class="subtitle">Accelerating Emergency Response in Kisumu County</p>
-      <a href="solution.html" class="cta-button">See Our Solution</a>
+
+<header>
+    <h1>JamiiResQ Solutions</h1>
+    <p>Accelerating Emergency Response for Safer Communities</p>
+</header>
+
+<nav>
+    <div>
+        <a href="#about">About</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Our Solution</a>
+        <a href="#impact">Impact</a>
+        <a href="#contact">Contact</a>
     </div>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="solution.html">Solution</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <main class="content">
-    <section>
-      <h2>Our Mission</h2>
-      <p>To reduce emergency response time and save lives using technology and community mobilization in Kisumu.</p>
-    </section>
-  </main>
-  <footer>
+</nav>
+
+<div class="hero">
+    <h1>Faster Emergency Response. More Lives Saved.</h1>
+    <p>Harnessing technology to connect communities with rapid emergency assistance.</p>
+    <a class="btn" href="#contact">Join the Movement</a>
+</div>
+
+<section id="about" class="section">
+    <h2>About JamiiResQ</h2>
+    <p>JamiiResQ Solutions is a tech-driven platform designed to reduce emergency response time in Kisumu County. Our mission is to empower local responders, integrate communication systems, and ensure that emergencies are handled swiftly and efficiently across communities.</p>
+</section>
+
+<section id="problem" class="section">
+    <h2>The Problem</h2>
+    <p>Communities in Kisumu face critical delays in medical, fire, and disaster response due to uncoordinated communication, inadequate responder networks, and limited access to real-time emergency services. These delays lead to preventable fatalities, worsening injuries, and increased trauma.</p>
+</section>
+
+<section id="solution" class="section">
+    <h2>Our Solution</h2>
+    <p>JamiiResQ leverages mobile technology, geolocation, and a network of trained community responders to reduce these delays. The platform integrates emergency reporting via smartphone, SMS, or USSD, and intelligently dispatches responders based on proximity and availability. We also partner with healthcare facilities and security providers to improve emergency outcomes.</p>
+</section>
+
+<section id="impact" class="section">
+    <h2>Impact</h2>
+    <p>Through pilot programs, we expect to reduce average response times by over 40%, improve survival rates, and increase public trust in local emergency services. Impact is measured using real-time analytics, feedback surveys, and field reports from users and responders.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@jamiiresq.org</p>
+    <p>Phone: +254716251805</p>
+    <p>Facebook: <a href="https://facebook.com/JamiiResQSolutions" target="_blank">JamiiResQ Solutions</a></p>
+</section>
+
+<footer class="footer">
     <p>&copy; 2025 JamiiResQ Solutions. All rights reserved.</p>
-  </footer>
+</footer>
+
 </body>
 </html>
